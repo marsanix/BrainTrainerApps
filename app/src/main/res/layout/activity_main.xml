@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnStartGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="40dp"
+        android:text="GO!" />
+
+    <TextView
+        android:id="@+id/tvTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:background="#3F51B5"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="30s" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="31+12" />
+
+    <TextView
+        android:id="@+id/tvPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:background="#FF5722"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="0/0" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tvQuestion"
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:layout_marginRight="5dp"
+            android:textSize="50dp"
+            android:backgroundTint="@color/ungu"
+            android:tag="0"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:layout_marginLeft="5dp"
+            android:textSize="50dp"
+            android:backgroundTint="@color/hijau"
+            android:tag="0"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:layout_marginRight="5dp"
+            android:textSize="50dp"
+            android:backgroundTint="@color/pink"
+            android:tag="0"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:layout_marginLeft="5dp"
+            android:textSize="50dp"
+            android:backgroundTint="@color/biru"
+            android:tag="0"
+            android:text="4"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="30dp"
+        android:text="Correct!" />
+
+</RelativeLayout>
